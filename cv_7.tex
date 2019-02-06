@@ -14,8 +14,8 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -23,18 +23,109 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref}
 \documentclass[11pt,a4paper,sans,colorlinks]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 \usepackage[utf8]{inputenc}
-%\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
 
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \definecolor{rails}{RGB}{204,0,0}
+
+%TeXporter:DefineEmojiColors
+\definecolor{c0a0808}{RGB}{10,8,8}
+\definecolor{cff0000}{RGB}{255,0,0}
+\definecolor{cff9700}{RGB}{255,151,0}
+\definecolor{c1a0f00}{RGB}{26,15,0}
+\definecolor{c782121}{RGB}{120,33,33}
+\definecolor{cffffff}{RGB}{255,255,255}
+\definecolor{cffefef}{RGB}{255,239,239}
+\definecolor{c250303}{RGB}{37,3,3}
+\definecolor{ce3dbdb}{RGB}{227,219,219}
+\definecolor{cd45500}{RGB}{212,85,0}
+\definecolor{cffd42a}{RGB}{255,212,42}
+\definecolor{caa4400}{RGB}{170,68,0}
+\definecolor{cff5555}{RGB}{255,85,85}
+\definecolor{cffff00}{RGB}{255,255,0}
+\definecolor{c5a5a5a}{RGB}{90,90,90}
+\definecolor{ce9c900}{RGB}{233,201,0}
+\definecolor{c2b0000}{RGB}{43,0,0}
+\definecolor{c00ffff}{RGB}{0,255,255}
+
+%TeXporter:EmojiHappyFace
+\def\CreateHappyFace{
+  \begin{tikzpicture}[scale=0.15]
+    \pgfdeclareradialshading{ballshading}{\pgfpoint{-10bp}{10bp}}
+    {color(0bp)=(yellow!40!white);
+    color(9bp)=(yellow!55!white);
+    color(18bp)=(yellow!60!orange);
+    color(25bp)=(yellow!50!orange);
+    color(50bp)=(black)}
+    \pgfpathcircle{\pgfpoint{0cm}{0cm}}{2cm}
+    \pgfshadepath{ballshading}{20}
+    \pgfusepath{}
+    \pgfdeclareradialshading{ballshading}{\pgfpoint{-10bp}{10bp}}
+    {color(0bp)=(yellow!40!white);
+    color(9bp)=(yellow!30!white);
+    color(18bp)=(yellow!60!orange);
+    color(25bp)=(yellow!50!orange);
+    color(50bp)=(orange)}
+    \pgfpathcircle{\pgfpoint{0cm}{0cm}}{1.85cm}
+    \pgfshadepath{ballshading}{20}
+    \pgfusepath{}
+    %Head hat
+    \path[yshift=138,xshift=-140,scale=0.012,yscale=-1, fill=white,opacity=0.234] (411.4196,246.6473) .. controls
+    (344.7661,246.6473) and (288.7870,289.5501) .. (273.0134,347.5848) .. controls
+    (311.3176,336.0898) and (355.6292,329.4911) .. (402.8571,329.4911) .. controls
+    (457.9662,329.4911) and (509.1043,338.4615) .. (551.3571,353.7411) .. controls
+    (537.9844,292.6125) and (480.4076,246.6473) .. (411.4196,246.6473) -- cycle;
+    %Left eye
+    \path[yshift=163,xshift=-68,scale=0.012,inner color=c782121!70!yellow,outer color=c782121!60!black,yscale=-1] (157.4105,420.0859) .. controls (145.5758,420.0859) and
+    (135.9730,441.1746) .. (135.9730,467.2109) .. controls (135.9730,472.5231) and
+    (136.3929,477.6340) .. (137.1293,482.3984) .. controls (139.9795,463.6457) and
+    (148.6651,449.9922) .. (158.9730,449.9922) .. controls (167.3672,449.9922) and
+    (174.7174,459.0360) .. (178.6918,472.5234) .. controls (178.7809,470.7772) and
+    (178.8168,469.0096) .. (178.8168,467.2109) .. controls (178.8168,441.1746) and
+    (169.2452,420.0859) .. (157.4105,420.0859) -- cycle;
+    %Right eye
+    \path[yshift=163,xshift=68,xscale=-1,scale=0.012,inner color=c782121!70!yellow,outer color=c782121!60!black,yscale=-1] (157.4105,420.0859) .. controls (145.5758,420.0859) and
+    (135.9730,441.1746) .. (135.9730,467.2109) .. controls (135.9730,472.5231) and
+    (136.3929,477.6340) .. (137.1293,482.3984) .. controls (139.9795,463.6457) and
+    (148.6651,449.9922) .. (158.9730,449.9922) .. controls (167.3672,449.9922) and
+    (174.7174,459.0360) .. (178.6918,472.5234) .. controls (178.7809,470.7772) and
+    (178.8168,469.0096) .. (178.8168,467.2109) .. controls (178.8168,441.1746) and
+    (169.2452,420.0859) .. (157.4105,420.0859) -- cycle;
+    %mouth
+    \path[yshift=203,xshift=-90,scale=0.024,yscale=-1,draw=black,inner color=c782121!70!yellow,outer color=c782121!60!black,miter limit=4.00,line width=0.820pt]
+    (83.2188,316.4062) .. controls (86.0968,339.8625) and (107.1942,358.0625) ..
+    (132.8438,358.0625) .. controls (158.3006,358.0625) and (179.3095,340.1386) ..
+    (182.4375,316.9375) .. controls (167.0177,319.5504) and (150.8782,320.9375) ..
+    (134.2812,320.9375) .. controls (116.6268,320.9375) and (99.5245,319.3512) ..
+    (83.2188,316.4062) -- cycle;
+    %teeth
+    \path[yshift=203,xshift=-90,scale=0.024,yscale=-1,inner color=white,outer color=ce3dbdb!80!black,draw=black,line width=0.6] (83.3970,316.4171) .. controls (84.1788,322.7888) and
+    (86.2941,328.7681) .. (89.4908,334.1046) .. controls (103.3990,334.8620) and
+    (119.1174,338.6714) .. (133.0437,338.3979) .. controls (148.5504,338.0933) and
+    (162.2806,333.5914) .. (177.7095,332.0108) .. controls (180.1799,327.3657) and
+    (181.8923,322.3146) .. (182.6157,316.9483) .. controls (167.1960,319.5612) and
+    (151.0564,320.9483) .. (134.4595,320.9483) .. controls (116.8050,320.9483) and
+    (99.7027,319.3620) .. (83.3970,316.4171) -- cycle;
+    %tangue
+    \path[yshift=203,xshift=-110,scale=0.024,yscale=-1,xscale=1.25,inner color=cff5555!80!black,outer color=c782121!60!black,opacity=0.9] (115.5196,352.1215) .. controls (111.3671,350.2285) and
+    (105.6834,345.8852) .. (102.8892,342.4698) -- (97.8089,336.2598) --
+    (102.2146,336.3376) .. controls (104.6377,336.3804) and (111.6672,337.1200) ..
+    (117.8358,337.9812) .. controls (124.3649,338.8926) and (133.4252,338.8866) ..
+    (139.5191,337.9667) .. controls (145.2764,337.0975) and (153.3516,335.9044) ..
+    (157.4639,335.3152) -- (164.9409,334.2440) -- (157.7177,342.3122) .. controls
+    (146.0180,355.3804) and (130.5538,358.9753) .. (115.5196,352.1216) -- cycle;
+  \end{tikzpicture}
+  }
+  %TeXporter:EndEmojiHappyFace
+
 \moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
-\usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -126,18 +217,55 @@
   \newline \newline
   Detailed achievements:
   \begin{itemize}
-    \item Contributing to some private and public gems of LogicalBricks, such as fm\_timbrado\_cfdi, cfdi\_parser, fm\_layout
-    \item Modeling and coding the new specification 'Nomina 1.2' given by the Mexican Tax Agency (SAT)
-    \item Modeling and coding the new specification 'CFDI 3.3' given by the Mexican Tax Agency (SAT)
-    \item Maintaining and upgrating projects such as Infacto (Payroll and Billing), IDEClara (Declare IDE), Prev(Social Security Control)
+    \item Contributing to some private and public LogicalBricks' gems, for example.
+      \begin{itemize}
+        \item \textbf{fm\_timbrado\_cfdi}
+          \begin{itemize}
+            \item Update to support changes of digital tax receipt online (CFDI 3.3 of Mexican Tax Agency), following the specifications given by the PAC (Facturación Moderna)
+          \end{itemize}
+        \item \textbf{fm\_layout}
+          \begin{itemize}
+            \item Update to support changes of Payroll 1.2 of Mexican Tax Agency, following the specifications given by the PAC (Facturación Moderna)
+            \item Update to support changes of digital tax receipt online (CFDI 3.3 of Mexican Tax Agency), following the specifications given by the PAC (Facturación Moderna)
+          \end{itemize}
+        \item \textbf{cfdi\_parser}
+          \begin{itemize}
+            \item Update to support changes of digital tax receipt online (CFDI 3.3 of Mexican Tax Agency)
+          \end{itemize}
+        \end{itemize}
+    \item Maintaining and upgrating logicalbricks' main projects, for example.
+      \begin{itemize}
+        \item \textbf{Infacto (Payroll and Billing)}
+          \begin{itemize}
+            \item Modeling and coding the new specification 'Nomina 1.2' given by the Mexican Tax Agency (SAT).
+            \item Modeling and coding the new specification 'CFDI 3.3' given by the Mexican Tax Agency (SAT).
+            \item In charge of the system adding new functionalities and solving bugs.
+          \end{itemize}
+        \item \textbf{IDEClara (Declare IDE)}
+          \begin{itemize}
+            \item In charge of the system adding new functionalities and solving bugs.
+          \end{itemize}
+        \item \textbf{SinPapel (Download invoices automatically)}
+          \begin{itemize}
+            \item In charge of the system adding new functionalities and solving bugs.
+          \end{itemize}
+        \item \textbf{Prev (Social Security Control)}
+          \begin{itemize}
+            \item Ading new functionalities and solving bugs.
+          \end{itemize}
+      \end{itemize}
+    %\item Modeling and coding the new specification 'Nomina 1.2' given by the Mexican Tax Agency (SAT)
+    %\item Modeling and coding the new specification 'CFDI 3.3' given by the Mexican Tax Agency (SAT)
+    %\item Maintaining and upgrating projects such as Infacto (Payroll and Billing), IDEClara (Declare IDE), Prev(Social Security Control)
   \end{itemize}}
 
   %\cventry{}{}{}{
-  \cventry{Sep 2018 -- Present}{Freelance}{}{Oaxaca, México}{}{
+  \cventry{Jun 2018 -- Present}{Freelance}{}{Oaxaca, México}{}{Ruby on Rails Developer
     \newline \newline
     Detailed achievements:
     \begin{itemize}
-      \item Planning, modeling and coding a system to report an specific tax to the Mexican Tax Agency (SAT)
+      \item Planning, modeling and coding a system for online sale of books and articles using the Conekta API (payment processing), developed with Rails using TDD.
+      \item Planning, modeling and coding a system to report an specific tax to the Mexican Tax Agency (SAT), developed with Rails using BDD y TDD.
     \end{itemize}}
 
 %\cventry{2016--Present}{Ruby on Rails Developer}{\textsc{LogicalBricks}}{Oaxaca, México}{}{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.
@@ -168,11 +296,21 @@
   \cvitem{}{Workshop of 10 hours}
 \subsection{As Organizer}
   \cvitem{2015,2016,2017}{Coderetreat 2015, 2016 and 2017 Oaxaca, Oaxaca de Juaréz, Oaxaca, México. Global day of CodeRetreat}
-  \cvitem{2016-2018}{Coding Dojos, Oaxaca de Juaréz, Oaxaca, México. Series of Coding Dojos sessions organized by Oaxaca.rb. Ruby User Community Group from Oaxaca, México}
+  \cvitem{2016-2018}{Coding Dojos, Oaxaca de Juaréz, Oaxaca, México. Series of Coding Dojos sessions organized by Oaxaca.rb. Ruby User Community Group from Oaxaca, México
+  \newline
+  \begin{itemize}
+    \item Collaborator in the administration of the community page \href{http://oaxacarb.org/}{Oaxacarb.rb}
+    \item Creator of the page \href{https://www.facebook.com/oaxacarb}{Oaxaca.rb} on Facebook \CreateHappyFace , to make the community known to more people.
+    \item Creator of \href{https://oaxacarb.herokuapp.com/}{oaxacarb.herokuapp} to show information about the community's Slack channel.
+    \item Responsible for the biweekly campaign of the Coding Dojo, creating the event in EventBrite and sending the invitations through Mailchimp.
+  \end{itemize}}
 \subsection{Online Courses}
-  \cvitem{2015}{Ruby on Rails: An Introducction - Universidad Johns Hopkins - Coursera}
-  \cvitem{2015}{Rails with Active Record and Action Pack - Universidad Johns Hopkins - Coursera}
-  \cvitem{2015}{HTML, CSS and JavaScript - Universidad Científica y Tecnológica de Hong Kong - Coursera}
+  \cvitem{2015}{ Coursera
+    \begin{itemize}
+      \item Ruby on Rails: An Introducction - Universidad Johns Hopkins
+      \item Rails with Active Record and Action Pack - Universidad Johns Hopkins
+      \item HTML, CSS and JavaScript - Universidad Científica y Tecnológica de Hong Kong
+    \end{itemize}}
 
 %----------------------------------------------------------------------------------------
 %\cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}

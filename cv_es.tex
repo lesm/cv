@@ -1,9 +1,10 @@
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref}
 \documentclass[11pt,a4paper,sans,colorlinks]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{hyperref}
-%\usepackage{xcolor}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
 
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \definecolor{rails}{RGB}{204,0,0}
@@ -98,14 +99,7 @@
   }
   %TeXporter:EndEmojiHappyFace
 
-
-
-
 \moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
-\usepackage[scale=0.75]{geometry} % Reduce document margins
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -191,27 +185,27 @@
 %----------------------------------------------------------------------------------------
 
 \section{Experiencia laboral}
-  \cventry{Mayo 2016 -- Agosto 2018}{Ruby on Rails Developer}{\textsc{LogicalBricks}}{Oaxaca, México}{}{ Mantenimiento y actualización de los principales sistemas de Logicalbricks, y a su vez aprendiendo de un equipo de alto desempeño.
+  \cventry{Mayo 2016 -- Agosto 2018}{Ruby on Rails Developer}{\textsc{LogicalBricks}}{Oaxaca, México}{}{ Mantenimiento y actualización de los principales sistemas de Logicalbricks usando TDD, y a su vez aprendiendo de un equipo de alto desempeño.
   \newline \newline
   Actividades importantes:
   \begin{itemize}
-    \item Manteniendo y actualizando gemas publicas y privadas de LogicalBricks por ejemplo:
+    \item Manteniendo y actualizando gemas publicas y privadas de LogicalBricks, por ejemplo:
       \begin{itemize}
         \item \textbf{fm\_timbrado\_cfdi}
           \begin{itemize}
-            \item Actualización para soportar los cambios de la versión CFDI 3.3,
+            \item Actualización para soportar los cambios de la versión del comprobante fiscal digital por internet (CFDI 3.3),
               con base a las especificaciones del PAC Facturación Moderna.
           \end{itemize}
         \item \textbf{fm\_layout}
           \begin{itemize}
             \item Actualización para soportar los cambios de la Nómina 1.2,
               con base a las especificaciones del PAC Facturación Moderna.
-            \item Actualización para soportar los cambios de la versión CFDI 3.3,
+            \item Actualización para soportar los cambios de la versión del comprobante fiscal digital por internet (CFDI 3.3),
               con base a las especificaciones del PAC Facturación Moderna.
           \end{itemize}
         \item \textbf{cfdi\_parser}
           \begin{itemize}
-            \item Actualización para soportar los cambios de la versión CFDI 3.3
+            \item Actualización para soportar los cambios de la versión del comprobante fiscal digital por internet (CFDI 3.3)
           \end{itemize}
       \end{itemize}
     \item Manteniendo y actualizando los principales sistemas de LogicalBricks por ejemplo:
@@ -220,44 +214,30 @@
           \begin{itemize}
             \item Modelado y codificación de la nueva Nómina 1.2, cumpliendo con las especificaciones del SAT.
             \item Modelado y codificación de la nueva facturación electrónica (CFDI 3.3), cumpliendo con las especificaciones del SAT.
-            \item Resolviendo errores y agregando nuevas funcionalidades.
+            \item A cargo del sistema agregando nuevas funcionalidades y resolviendo errores.
           \end{itemize}
         \item \textbf{IDEClara (Para reportar el IDE)}
           \begin{itemize}
-            \item Resolviendo errores y agregando nuevas funcionalidades.
+            \item A cargo del sistema agregando nuevas funcionalidades y resolviendo errores.
+          \end{itemize}
+        \item \textbf{SinPapel (Para descargar facturas automáticamente)}
+          \begin{itemize}
+            \item A cargo del sistema agregando nuevas funcionalidades y resolviendo errores.
           \end{itemize}
         \item \textbf{Prev(Para control de previsión social)}
           \begin{itemize}
-            \item Resolviendo errores y agregando nuevas funcionalidades.
+            \item Agregando cambios y resolviendo errores.
           \end{itemize}
       \end{itemize}
   \end{itemize}}
 
-  \cventry{Jun 2018 -- Actualmente}{Freelance}{}{Oaxaca, México}{}{
+  \cventry{Jun 2018 -- Actualmente}{Freelance}{}{Oaxaca, México}{}{Ruby on Rails Developer
     \newline \newline
     Actividades importantes:
     \begin{itemize}
-      \item Planeación, modelado y construcción de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos). Desarrollado en Rails.
-      \item Planeación, modelado y construcción de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT, Desarrollado en Rails.
+      \item Planeación, modelado y construcción de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos). Desarrollado en Rails usando TDD.
+      \item Planeación, modelado y construcción de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT, Desarrollado en Rails usando BDD y TDD.
     \end{itemize}}
-
-%\cventry{2016--Present}{Ruby on Rails Developer}{\textsc{LogicalBricks}}{Oaxaca, México}{}{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.
-%\newline{}\newline{}
-%Detailed achievements:
-%\begin{itemize}
-%\item Learned how to make amazing coffee
-%\item Finally determined the reason for \textsc{PC LOAD LETTER}:
-%\begin{itemize}
-%\item Paper jam
-%\item Software issues:
-%\begin{itemize}
-%\item Word not sending the correct data to printer
-%\item Windows trying to print in letter format
-%\end{itemize}
-%\item Coffee spilled inside printer
-%\end{itemize}
-%\item Broke the office record for number of kitten pictures in cubicle
-%\end{itemize}}
 
 %----------------------------------------------------------------------------------------
 %	Workshops and Conferences
@@ -271,19 +251,18 @@
   \cvitem{2015-2017}{Coderetreat 2015, 2016 y 2017 Oaxaca, Oaxaca de Juárez, Oaxaca, México. Global day of CodeRetreat.}
   \cvitem{2015-2018}{Oaxaca.rb
     \begin{itemize}
-      \item { Participación en la administración de la página de la comunidad \href{http://oaxacarb.org/}{Oaxacarb.rb} }
-      \item { Creador de la página \href{https://www.facebook.com/oaxacarb}{Oaxaca.rb} en Facebook \CreateHappyFace , para dar a conocer
+      \item Participación en la administración de la página de la comunidad \href{http://oaxacarb.org/}{Oaxacarb.rb}
+      \item Creador de la página \href{https://www.facebook.com/oaxacarb}{Oaxaca.rb} en Facebook \CreateHappyFace , para dar a conocer
           la comunidad a más persona.
-        }
-      \item { Creador de \href{https://oaxacarb.herokuapp.com/}{oaxacarb.herokuapp} para mostrar información del canal de Slack de la comunidad. }
-      \item { Encargado de la campaña quincenal del Coding Dojo, creando el evento en EventBrite y enviando las invitaciones a través de Mailchimp.}
+      \item Creador de \href{https://oaxacarb.herokuapp.com/}{oaxacarb.herokuapp} para mostrar información del canal de Slack de la comunidad.
+      \item Encargado de la campaña quincenal del Coding Dojo, creando el evento en EventBrite y enviando las invitaciones a través de Mailchimp.
     \end{itemize}}
 \subsection{Cursos en línea}{
-  \cvitem{2015}{
+  \cvitem{2015}{ Coursera
     \begin{itemize}
-      \item {Ruby on Rails: An Introducction - Universidad Johns Hopkins - Coursera}
-      \item {Rails with Active Record and Action Pack - Universidad Johns Hopkins - Coursera}
-      \item {HTML, CSS and JavaScript - Universidad Científica y Tecnológica de Hong Kong - Coursera}
+      \item Ruby on Rails: An Introducction - Universidad Johns Hopkins
+      \item Rails with Active Record and Action Pack - Universidad Johns Hopkins
+      \item HTML, CSS and JavaScript - Universidad Científica y Tecnológica de Hong Kong
     \end{itemize}}
 
 %----------------------------------------------------------------------------------------
