@@ -1,105 +1,10 @@
 \PassOptionsToPackage{pdfpagelabels=false}{hyperref}
-\documentclass[11pt,a4paper,sans,colorlinks]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[10pt,a4paper,sans,colorlinks]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 \usepackage[utf8]{inputenc}
-\usepackage{tikz}
-\usepackage{xcolor}
-\usepackage{hyperref}
-\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[scale=0.82]{geometry} % Reduce document margins
 
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\definecolor{rails}{RGB}{204,0,0}
-
-%%TeXporter:DefineEmojiColors
-%\definecolor{c0a0808}{RGB}{10,8,8}
-%\definecolor{cff0000}{RGB}{255,0,0}
-%\definecolor{cff9700}{RGB}{255,151,0}
-%\definecolor{c1a0f00}{RGB}{26,15,0}
-%\definecolor{c782121}{RGB}{120,33,33}
-%\definecolor{cffffff}{RGB}{255,255,255}
-%\definecolor{cffefef}{RGB}{255,239,239}
-%\definecolor{c250303}{RGB}{37,3,3}
-%\definecolor{ce3dbdb}{RGB}{227,219,219}
-%\definecolor{cd45500}{RGB}{212,85,0}
-%\definecolor{cffd42a}{RGB}{255,212,42}
-%\definecolor{caa4400}{RGB}{170,68,0}
-%\definecolor{cff5555}{RGB}{255,85,85}
-%\definecolor{cffff00}{RGB}{255,255,0}
-%\definecolor{c5a5a5a}{RGB}{90,90,90}
-%\definecolor{ce9c900}{RGB}{233,201,0}
-%\definecolor{c2b0000}{RGB}{43,0,0}
-%\definecolor{c00ffff}{RGB}{0,255,255}
-
-%%TeXporter:EmojiHappyFace
-%\def\CreateHappyFace{
-  %\begin{tikzpicture}[scale=0.15]
-    %\pgfdeclareradialshading{ballshading}{\pgfpoint{-10bp}{10bp}}
-    %{color(0bp)=(yellow!40!white);
-    %color(9bp)=(yellow!55!white);
-    %color(18bp)=(yellow!60!orange);
-    %color(25bp)=(yellow!50!orange);
-    %color(50bp)=(black)}
-    %\pgfpathcircle{\pgfpoint{0cm}{0cm}}{2cm}
-    %\pgfshadepath{ballshading}{20}
-    %\pgfusepath{}
-    %\pgfdeclareradialshading{ballshading}{\pgfpoint{-10bp}{10bp}}
-    %{color(0bp)=(yellow!40!white);
-    %color(9bp)=(yellow!30!white);
-    %color(18bp)=(yellow!60!orange);
-    %color(25bp)=(yellow!50!orange);
-    %color(50bp)=(orange)}
-    %\pgfpathcircle{\pgfpoint{0cm}{0cm}}{1.85cm}
-    %\pgfshadepath{ballshading}{20}
-    %\pgfusepath{}
-    %%Head hat
-    %\path[yshift=138,xshift=-140,scale=0.012,yscale=-1, fill=white,opacity=0.234] (411.4196,246.6473) .. controls
-    %(344.7661,246.6473) and (288.7870,289.5501) .. (273.0134,347.5848) .. controls
-    %(311.3176,336.0898) and (355.6292,329.4911) .. (402.8571,329.4911) .. controls
-    %(457.9662,329.4911) and (509.1043,338.4615) .. (551.3571,353.7411) .. controls
-    %(537.9844,292.6125) and (480.4076,246.6473) .. (411.4196,246.6473) -- cycle;
-    %%Left eye
-    %\path[yshift=163,xshift=-68,scale=0.012,inner color=c782121!70!yellow,outer color=c782121!60!black,yscale=-1] (157.4105,420.0859) .. controls (145.5758,420.0859) and
-    %(135.9730,441.1746) .. (135.9730,467.2109) .. controls (135.9730,472.5231) and
-    %(136.3929,477.6340) .. (137.1293,482.3984) .. controls (139.9795,463.6457) and
-    %(148.6651,449.9922) .. (158.9730,449.9922) .. controls (167.3672,449.9922) and
-    %(174.7174,459.0360) .. (178.6918,472.5234) .. controls (178.7809,470.7772) and
-    %(178.8168,469.0096) .. (178.8168,467.2109) .. controls (178.8168,441.1746) and
-    %(169.2452,420.0859) .. (157.4105,420.0859) -- cycle;
-    %%Right eye
-    %\path[yshift=163,xshift=68,xscale=-1,scale=0.012,inner color=c782121!70!yellow,outer color=c782121!60!black,yscale=-1] (157.4105,420.0859) .. controls (145.5758,420.0859) and
-    %(135.9730,441.1746) .. (135.9730,467.2109) .. controls (135.9730,472.5231) and
-    %(136.3929,477.6340) .. (137.1293,482.3984) .. controls (139.9795,463.6457) and
-    %(148.6651,449.9922) .. (158.9730,449.9922) .. controls (167.3672,449.9922) and
-    %(174.7174,459.0360) .. (178.6918,472.5234) .. controls (178.7809,470.7772) and
-    %(178.8168,469.0096) .. (178.8168,467.2109) .. controls (178.8168,441.1746) and
-    %(169.2452,420.0859) .. (157.4105,420.0859) -- cycle;
-    %%mouth
-    %\path[yshift=203,xshift=-90,scale=0.024,yscale=-1,draw=black,inner color=c782121!70!yellow,outer color=c782121!60!black,miter limit=4.00,line width=0.820pt]
-    %(83.2188,316.4062) .. controls (86.0968,339.8625) and (107.1942,358.0625) ..
-    %(132.8438,358.0625) .. controls (158.3006,358.0625) and (179.3095,340.1386) ..
-    %(182.4375,316.9375) .. controls (167.0177,319.5504) and (150.8782,320.9375) ..
-    %(134.2812,320.9375) .. controls (116.6268,320.9375) and (99.5245,319.3512) ..
-    %(83.2188,316.4062) -- cycle;
-    %%teeth
-    %\path[yshift=203,xshift=-90,scale=0.024,yscale=-1,inner color=white,outer color=ce3dbdb!80!black,draw=black,line width=0.6] (83.3970,316.4171) .. controls (84.1788,322.7888) and
-    %(86.2941,328.7681) .. (89.4908,334.1046) .. controls (103.3990,334.8620) and
-    %(119.1174,338.6714) .. (133.0437,338.3979) .. controls (148.5504,338.0933) and
-    %(162.2806,333.5914) .. (177.7095,332.0108) .. controls (180.1799,327.3657) and
-    %(181.8923,322.3146) .. (182.6157,316.9483) .. controls (167.1960,319.5612) and
-    %(151.0564,320.9483) .. (134.4595,320.9483) .. controls (116.8050,320.9483) and
-    %(99.7027,319.3620) .. (83.3970,316.4171) -- cycle;
-    %%tangue
-    %\path[yshift=203,xshift=-110,scale=0.024,yscale=-1,xscale=1.25,inner color=cff5555!80!black,outer color=c782121!60!black,opacity=0.9] (115.5196,352.1215) .. controls (111.3671,350.2285) and
-    %(105.6834,345.8852) .. (102.8892,342.4698) -- (97.8089,336.2598) --
-    %(102.2146,336.3376) .. controls (104.6377,336.3804) and (111.6672,337.1200) ..
-    %(117.8358,337.9812) .. controls (124.3649,338.8926) and (133.4252,338.8866) ..
-    %(139.5191,337.9667) .. controls (145.2764,337.0975) and (153.3516,335.9044) ..
-    %(157.4639,335.3152) -- (164.9409,334.2440) -- (157.7177,342.3122) .. controls
-    %(146.0180,355.3804) and (130.5538,358.9753) .. (115.5196,352.1216) -- cycle;
-  %\end{tikzpicture}
-  %}
-  %%TeXporter:EndEmojiHappyFace
-
-\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{orange} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -161,7 +66,7 @@
 
 \section{Educación}
 
-\cventry{2011--2018}{Ingeniero En Sistemas Computacionales}{Instituto Tecnológico de Oaxaca, Oaxaca, México}{ITO}{}{}  % Arguments not required can be left empty
+\cventry{2011--2018}{Ing. En Sistemas Computacionales}{Instituto Tecnológico de Oaxaca}{ITO}{}{}  % Arguments not required can be left empty
 %\cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
 
 %\section{Masters Thesis}
@@ -183,63 +88,65 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
 \section{Experiencia laboral}
-  \cventry{Jun 2018 -- Actualmente}{Freelance}{}{Oaxaca, México}{}{Ruby on Rails Developer
+  \cventry{Ag. 2019 -- Acte.}{Ruby on Rails Developer}{Zentiglo}{Santiago de Querétaro, Qro}{}{
+    Mantenimiento y actualizando el sistema principal de Zentiglo
     \newline \newline
     Actividades importantes:
     \begin{itemize}
-      \item Planeación, modelado y construcción de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos). Desarrollado en Rails usando TDD.
-      \item Planeación, modelado y construcción de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT, Desarrollado en Rails usando BDD y TDD.
+      \item Actualizando gemas, refactorizando el código.
+      \item Agregando nueva funcionalidad al API de timbrado
+      \item Creación de un módulo para la generación de addendas (CFDI) dinámicamente con metaprogramación con base a un XSD
+      \item Creación de un script para timbrar facturas a traves del API de timbrado, usando incron para ejecutar el script al momento que se suba un archivo al ftp
+      \item Generación de archivos xslts para transformación de XML a otros XML
     \end{itemize}}
-
-  \cventry{Mayo 2016 -- Agosto 2018}{Ruby on Rails Developer}{\textsc{LogicalBricks}}{Oaxaca, México}{}{ Mantenimiento y actualización de los principales sistemas de Logicalbricks usando TDD, y a su vez aprendiendo de un equipo de alto desempeño.
-  \newline \newline
-  Actividades importantes:
+  \cventry{Setp. 2019 -- Dic. 2019}{Ruby on Rails Developer}{Freelance}{Santiago de Querétaro, Qro}{}{
+    Desarrollando sistemas con Ruby on Rails usando BDD y TDD
+    \newline \newline
+    Actividades importantes:
+    \begin{itemize}
+      \item Planeación, modelado y construcción de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos)
+      \item Planeación, modelado y construcción de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT
+    \end{itemize}}
+  \cventry{Jun. 2018 -- Jul. 2019}{Ruby on Rails Developer}{Freelance}{Oaxaca de Juárez, Oax}{}{
+    Desarrollando sistemas con Ruby on Rails usando BDD y TDD
+    \newline \newline
+    Actividades importantes:
+    \begin{itemize}
+      \item Planeación, modelado y construcción de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos)
+      \item Planeación, modelado y construcción de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT
+    \end{itemize}}
+  \cventry{May. 2016 -- Ag. 2018}{Ruby on Rails Developer}{LogicalBricks}{Oaxaca de Juárez, Oax}{}{
+    Mantenimiento y actualización de los principales sistemas de Logicalbricks usando TDD, y a su vez aprendiendo de un equipo de alto desempeño.
+    \newline \newline
+    Actividades importantes:
   \begin{itemize}
     \item Manteniendo y actualizando gemas publicas y privadas de LogicalBricks, por ejemplo:
+    \item \textbf{fm\_timbrado\_cfdi}
       \begin{itemize}
-        \item \textbf{fm\_timbrado\_cfdi}
-          \begin{itemize}
-            \item Actualización para soportar los cambios de la versión del comprobante fiscal digital por internet (CFDI 3.3),
-              con base a las especificaciones del PAC Facturación Moderna.
-          \end{itemize}
-        \item \textbf{fm\_layout}
-          \begin{itemize}
-            \item Actualización para soportar los cambios de la Nómina 1.2,
-              con base a las especificaciones del PAC Facturación Moderna.
-            \item Actualización para soportar los cambios de la versión del comprobante fiscal digital por internet (CFDI 3.3),
-              con base a las especificaciones del PAC Facturación Moderna.
-          \end{itemize}
-        \item \textbf{cfdi\_parser}
-          \begin{itemize}
-            \item Actualización para soportar los cambios de la versión del comprobante fiscal digital por internet (CFDI 3.3)
-          \end{itemize}
+        \item Actualización para soportar los cambios del CFDI 3.3 con base a las especificaciones del PAC Facturación Moderna.
+      \end{itemize}
+    \item \textbf{fm\_layout}
+      \begin{itemize}
+        \item Actualización para soportar los cambios de la Nómina 1.2 y la nueva facturación electrónica CFDI 3.3 (SAT)
+          con base a las especificaciones del PAC Facturación Moderna.
+      \end{itemize}
+    \item \textbf{cfdi\_parser}
+      \begin{itemize}
+        \item Actualización para soportar los cambios de la versión del comprobante fiscal digital por internet (CFDI 3.3)
       \end{itemize}
   \end{itemize}}
-
   \cventry{}{}{}{}{}{
     \begin{itemize}
       \item Manteniendo y actualizando los principales sistemas de LogicalBricks por ejemplo:
+      \item \textbf{Infacto (Nómina y facturación)}
         \begin{itemize}
-          \item \textbf{Infacto (Nómina y facturación)}
-            \begin{itemize}
-              \item Modelado y codificación de la nueva Nómina 1.2, cumpliendo con las especificaciones del SAT.
-              \item Modelado y codificación de la nueva facturación electrónica (CFDI 3.3), cumpliendo con las especificaciones del SAT.
-              \item A cargo del sistema agregando nuevas funcionalidades y resolviendo errores.
-            \end{itemize}
-          \item \textbf{IDEClara (Para reportar el IDE)}
-            \begin{itemize}
-              \item A cargo del sistema agregando nuevas funcionalidades y resolviendo errores.
-            \end{itemize}
-          \item \textbf{SinPapel (Para descargar facturas automáticamente)}
-            \begin{itemize}
-              \item A cargo del sistema agregando nuevas funcionalidades y resolviendo errores.
-            \end{itemize}
-          \item \textbf{Prev(Para control de previsión social)}
-            \begin{itemize}
-              \item Agregando cambios y resolviendo errores.
-            \end{itemize}
+          \item Modelado y codificación de la nueva Nómina 1.2 y la nueva facturación electrónica CFDI 3.3 (SAT)
+          \item A cargo del sistema agregando nuevas funcionalidades.
+        \end{itemize}
+      \item \textbf{IDEClara, SinPapel, Prev}
+        \begin{itemize}
+          \item A cargo de los sistemas agregando nuevas funcionalidades.
         \end{itemize}
     \end{itemize}
   }
@@ -250,30 +157,29 @@
 
 \section{Talleres, Conferencias y Cursos}
 \subsection{Asistente}
-  \cventry{2018}{Action Cable}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Introducción Action Cable por Azarel Doroteo}
-  \cventry{2017}{Metaprogramación en Ruby}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Metaprogramación en Ruby por Azarel Doroteo}
-  \cventry{}{Matchers en Rspec}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Matchers personalizados en Rspec por Azarel Doroteo}
-  \cventry{2016}{APIs en Rails}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Introducción APIs en Rails por Fernando Villalobos}
-  \cventry{}{Tmux}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Tmux por Hermes Ojeda}
-  \cventry{}{Vim + Plugins}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Vim + Plugins para trabajar con Rails por Azarel Doroteo}
-  \cventry{}{Vistas en Rails}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Vistas en Rails por Fernando Villalobos}
-  \cventry{2015}{Controladores en Rails}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Controladores en Rails por Hermes Ojeda}
-  \cventry{}{Bloques, Lambdas y Procs en Ruby}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Introducción a Bloques, Lambdas y Procs en Ruby por Azarel Doroteo}
-  \cventry{}{Git}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Introducción a Git por Hermes Ojeda}
-  \cventry{}{Rspec-Given}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Introducción a Rspect-Given por Azarel Doroteo}
-  \cventry{}{TrailBlazer}{Plática}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Conociendo TrailBlazer por Nick Sutterer}
-  \cventry{2014}{Middleman}{Taller}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{Cómo hacer páginas estáticas con Ruby por Fernando Villalobos}
+  \cventry{2014 - 2018}{Pláticas}{
+    Action Cable,
+    Metaprogramación en ruby,
+    Matchers en RSpec,
+    APIs en Rails,
+    Tmux,
+    Vim + Plugins,
+    Vistas en Rails,
+    Controladores en Rails,
+    Bloques, lambdas y procs en ruby,
+    Git,
+    TrailBlazer,
+    Middleman}{}{por Ruby Oaxaca Comunidad (Oaxaca.rb)}{}
 \subsection{Ponente}
-  \cventry{2015}{Introducción a Ruby}{Taller}{Oaxaca de Juárez, Oaxaca, México}{}{En el aniversario XII de la Carrera de Ingeniería en Sistemas Computacionales, organizado por el Instituto Tecnológico de Oaxaca.}
+  \cventry{2015}{Taller}{Introducción a Ruby}{Oaxaca de Juárez, Oax}{}{En el aniversario XII de la Carrera de Ingeniería en Sistemas Computacionales, organizado por el Instituto Tecnológico de Oaxaca.}
   \cvitem{}{Taller de 10 horas}
 \subsection{Organizador}
-  \cventry{2015-2017}{Coderetreat 2015, 2016 y 2017}{Taller}{Oaxaca de Juárez, Oaxaca, México}{Global day of CodeRetreat}{}
-  \cventry{2015-2018}{Oaxaca.rb}{}{Comunidad de programadores en ruby}{}{}
-  \cvitem{}{
+  \cventry{2015-2017}{Taller}{Coderetreat 2015, 2016 y 2017}{Oaxaca de Juárez, Oax}{Global day of CodeRetreat}{}
+  \cventry{2015-2018}{Dojos}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{}{
     \begin{itemize}
       \item Participación en la administración de la página de la comunidad \href{http://oaxacarb.org/}{Oaxacarb.rb}
-      %\item Creador de la página \href{https://www.facebook.com/oaxacarb}{Oaxaca.rb} en Facebook \CreateHappyFace , para dar a conocer
-          %la comunidad a más persona.
+        %\item Creador de la página \href{https://www.facebook.com/oaxacarb}{Oaxaca.rb} en Facebook \CreateHappyFace , para dar a conocer
+        %la comunidad a más persona.
       \item Creador de \href{https://oaxacarb.herokuapp.com/}{oaxacarb.herokuapp} para mostrar información del canal de Slack de la comunidad.
       \item Encargado de la campaña quincenal del Coding Dojo, creando el evento en EventBrite y enviando las invitaciones a través de Mailchimp.
     \end{itemize}}
