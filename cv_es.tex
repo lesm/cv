@@ -32,29 +32,6 @@
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
-
-% To remove the cover letter, comment out this entire block
-
-%\clearpage
-
-%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-%\date{\today} % Letter date
-%\opening{Dear Sir or Madam,} % Opening greeting
-%\closing{Sincerely yours,} % Closing phrase
-%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-
-%\makelettertitle % Print letter title
-
-%\lipsum[1-2] % Dummy text
-%\lipsum[4] % Dummy text
-
-%\makeletterclosing % Print letter signature
-
-\newpage
-
-%----------------------------------------------------------------------------------------
 %	CURRICULUM VITAE
 %----------------------------------------------------------------------------------------
 
@@ -81,8 +58,9 @@
 
 \section{Idiomas}
 
-\cvitemwithcomment{Español}{Nativo}{}
-\cvitemwithcomment{Inglés}{Competente}{Buen nivel conversacional (Nivel B1)}
+\cvlistdoubleitem{Español (Nativo)}{Inglés, \emph{\small{buen nivel conversacional (Nivel B1).}}}
+%\cvitemwithcomment{Español}{Nativo}{}
+%\cvitemwithcomment{Inglés}{Competente}{}
 %\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
 
 %----------------------------------------------------------------------------------------
@@ -90,63 +68,58 @@
 %----------------------------------------------------------------------------------------
 \section{Experiencia laboral}
   \cventry{Ag. 2019 -- Acte.}{Ruby on Rails Developer}{Zentiglo}{Santiago de Querétaro, Qro}{}{
-    Mantenimiento y actualizando el sistema principal de Zentiglo
+    Mantenimiento y actualización del sistema principal de Zentiglo usando TDD, sistema de Facturación Electrónica.
     \newline \newline
     Actividades importantes:
     \begin{itemize}
-      \item Actualizando gemas, refactorizando el código.
-      \item Agregando nueva funcionalidad al API de timbrado
-      \item Creación de un módulo para la generación de addendas (CFDI) dinámicamente con metaprogramación con base a un XSD
+      \item Agregando funcionalidad a la aplicación y al API de timbrado
+      \item Creación de un módulo para la generación de addendas (CFDI) con base a un XSD, usando metaprogramación.
       \item Creación de un script para timbrar facturas a traves del API de timbrado, usando incron para ejecutar el script al momento que se suba un archivo al ftp
       \item Generación de archivos xslts para transformación de XML a otros XML
+      \item Actualizando gemas, refactorización de código.
     \end{itemize}}
-  \cventry{Setp. 2019 -- Dic. 2019}{Ruby on Rails Developer}{Freelance}{Santiago de Querétaro, Qro}{}{
-    Desarrollando sistemas con Ruby on Rails usando BDD y TDD
-    \newline \newline
-    Actividades importantes:
-    \begin{itemize}
-      \item Planeación, modelado y construcción de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos)
-      \item Planeación, modelado y construcción de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT
-    \end{itemize}}
+  \cventry{Setp. 2019 -- Dic. 2019}{Ruby on Rails Developer}{Warepow}{Santiago de Querétaro, Qro}{}{
+    Agregando funcionalidad a un sistema en Ruby on Rails usando TDD. Sistema para al control administrativo y financiero de obras. Trabajando fines de semana.
+  }
   \cventry{Jun. 2018 -- Jul. 2019}{Ruby on Rails Developer}{Freelance}{Oaxaca de Juárez, Oax}{}{
-    Desarrollando sistemas con Ruby on Rails usando BDD y TDD
+    Desarrollando sistemas con Ruby on Rails usando BDD y TDD.
     \newline \newline
     Actividades importantes:
     \begin{itemize}
-      \item Planeación, modelado y construcción de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos)
-      \item Planeación, modelado y construcción de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT
+      \item Desarrollo de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos)
+      \item Desarrollo de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT
     \end{itemize}}
   \cventry{May. 2016 -- Ag. 2018}{Ruby on Rails Developer}{LogicalBricks}{Oaxaca de Juárez, Oax}{}{
-    Mantenimiento y actualización de los principales sistemas de Logicalbricks usando TDD, y a su vez aprendiendo de un equipo de alto desempeño.
+    Desarrollando para Logicalbricks usando TDD, y a su vez aprendiendo de un equipo de alto desempeño.
     \newline \newline
     Actividades importantes:
   \begin{itemize}
-    \item Manteniendo y actualizando gemas publicas y privadas de LogicalBricks, por ejemplo:
+    \item Mantenimiento y actualización de gemas públicas y privadas de LogicalBricks, por ejemplo:
     \item \textbf{fm\_timbrado\_cfdi}
       \begin{itemize}
-        \item Actualización para soportar los cambios del CFDI 3.3 con base a las especificaciones del PAC Facturación Moderna.
+        \item Actualización para soportar los cambios del CFDI 3.3 con base a las especificaciones del PAC Facturación Moderna
       \end{itemize}
     \item \textbf{fm\_layout}
       \begin{itemize}
         \item Actualización para soportar los cambios de la Nómina 1.2 y la nueva facturación electrónica CFDI 3.3 (SAT)
-          con base a las especificaciones del PAC Facturación Moderna.
+          con base a las especificaciones del PAC Facturación Moderna
       \end{itemize}
     \item \textbf{cfdi\_parser}
       \begin{itemize}
-        \item Actualización para soportar los cambios de la versión del comprobante fiscal digital por internet (CFDI 3.3)
+        \item Actualización para soportar los cambios del CFDI 3.3
       \end{itemize}
   \end{itemize}}
   \cventry{}{}{}{}{}{
     \begin{itemize}
-      \item Manteniendo y actualizando los principales sistemas de LogicalBricks por ejemplo:
+      \item Mantenimiento y actualización de los principales sistemas de LogicalBricks por ejemplo:
       \item \textbf{Infacto (Nómina y facturación)}
         \begin{itemize}
           \item Modelado y codificación de la nueva Nómina 1.2 y la nueva facturación electrónica CFDI 3.3 (SAT)
-          \item A cargo del sistema agregando nuevas funcionalidades.
+          \item A cargo del sistema agregando nuevas funcionalidades
         \end{itemize}
       \item \textbf{IDEClara, SinPapel, Prev}
         \begin{itemize}
-          \item A cargo de los sistemas agregando nuevas funcionalidades.
+          \item A cargo de los sistemas agregando nuevas funcionalidades
         \end{itemize}
     \end{itemize}
   }
@@ -157,7 +130,7 @@
 
 \section{Talleres, Conferencias y Cursos}
 \subsection{Asistente}
-  \cventry{2014 - 2018}{Pláticas}{
+  \cventry{2014 - 2018}{Pláticas}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{}{
     Action Cable,
     Metaprogramación en ruby,
     Matchers en RSpec,
@@ -169,7 +142,7 @@
     Bloques, lambdas y procs en ruby,
     Git,
     TrailBlazer,
-    Middleman}{}{por Ruby Oaxaca Comunidad (Oaxaca.rb)}{}
+    Middleman}
 \subsection{Ponente}
   \cventry{2015}{Taller}{Introducción a Ruby}{Oaxaca de Juárez, Oax}{}{En el aniversario XII de la Carrera de Ingeniería en Sistemas Computacionales, organizado por el Instituto Tecnológico de Oaxaca.}
   \cvitem{}{Taller de 10 horas}
@@ -184,7 +157,7 @@
       \item Encargado de la campaña quincenal del Coding Dojo, creando el evento en EventBrite y enviando las invitaciones a través de Mailchimp.
     \end{itemize}}
 \subsection{Cursos en línea}{
-  \cvitem{2015}{ Coursera
+  \cventry{2015-2018}{Coursera}{}{}{}{
     \begin{itemize}
       \item Ruby on Rails: An Introducction - Universidad Johns Hopkins
       \item Rails with Active Record and Action Pack - Universidad Johns Hopkins
@@ -217,13 +190,13 @@
 
 \section{Herramientas y lenguajes de Desarrollo}
 
-\cvitem{Lenguajes}{Java(intermedio), Ruby(intermedio), SQL(intermedio), JavaScript(intermedio)}
-\cvitem{Frameworks}{Rails 4,5 (intermedio) Vue(aprendiendo), Bootstrap(intermedio)}
-\cvitem{DBMS}{MySQL, PostgreSQL}
-\cvitem{Sistemas Linux}{Debian, Ubuntu, ArchLinux, Chakra}
-\cvitem{SCV}{Git(Github, Bitbucket)}
-\cvitem{Integración continua}{Semaphore CI}
-\cvitem{Otros}{Vim(avanzado), Tmux, Heroku, RVM}
+\cvitem{Lenguajes}{\small{Java, Ruby, SQL, JavaScript}}
+\cvitem{Frameworks}{\small{Rails (4,5), Vue(aprendiendo), Bootstrap}}
+\cvitem{DBMS}{\small{MySQL, PostgreSQL}}
+\cvitem{Sistemas Linux}{\small{Debian, Ubuntu, ArchLinux, Chakra}}
+\cvitem{SCV}{\small{Git(Github, Bitbucket, Gitlab)}}
+\cvitem{Integración continua}{\small{Semaphore CI}}
+\cvitem{Otros}{\small{Vim, Tmux, RVM, Docker, Jira, Trello, Zsh, Yakuake}}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
@@ -231,9 +204,9 @@
 
 \section{Herramientas de Desarrollo relacionadas con Rails}
 
-\cvitem{Pruebas}{Rspect, Minitest, Capybara, Shoulda-Matchers, FactoryGirl/FactoryBot}
-\cvitem{Vista}{Simpleform, Haml, JQuery, CoffeScript}
-\cvitem{Despliegue}{Capistrano, Nginx, Unicorn, Apache, Passenger, Digital Ocean}
+\cvitem{Pruebas}{\small{Rspect, Minitest, Capybara, Shoulda-Matchers, FactoryGirl/FactoryBot, VCR, WebMock}}
+\cvitem{Vista}{\small{Simpleform, Haml, JQuery, CoffeScript}}
+\cvitem{Despliegue}{\small{Capistrano, Nginx, Unicorn, Apache, Passenger, Digital Ocean, Heroku}}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
