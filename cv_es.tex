@@ -1,7 +1,7 @@
 \PassOptionsToPackage{pdfpagelabels=false}{hyperref}
 \documentclass[10pt,a4paper,sans,colorlinks]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.82]{geometry} % Reduce document margins
+\usepackage[scale=0.83]{geometry} % Reduce document margins
 
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{orange} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -16,6 +16,7 @@
 % All information in this block is optional, comment out any lines you don't need
 %\title{Curriculum Vitae}
 \address{Calle Teodoro la Rey}{Oaxaca de Juarez, Oaxaca 68033}
+\address{Don Jaime 114 11, La Santa Cruz}{Santiago de Querétaro, Qro. 76020}
 \mobile{951 578 75 48}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
@@ -37,13 +38,16 @@
 
 \makecvtitle % Print the CV title
 
+\section{Acerca de mí}
+  Seguidor de las buenas prácticas de desarrollo de software desde TDD (Desarrollo guiado por pruebas), patrones de diseño, refactorización de código.
+  Me gusta trabajar con equipos multidisciplinarios donde mis compañeros compartan el uso de las buenas prácticas de desarrollo de software.
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Educación}
 
-\cventry{2011--2018}{Ing. En Sistemas Computacionales}{Instituto Tecnológico de Oaxaca}{ITO}{}{}  % Arguments not required can be left empty
+\cventry{2011--2018}{Ing. En Sistemas Computacionales}{Instituto Tecnológico de Oaxaca}{}{}{}  % Arguments not required can be left empty
 %\cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
 
 %\section{Masters Thesis}
@@ -58,7 +62,7 @@
 
 \section{Idiomas}
 
-\cvlistdoubleitem{Español (Nativo)}{Inglés, \emph{\small{buen nivel conversacional (Nivel B1).}}}
+\cvlistdoubleitem{Español (Nativo)}{Inglés, \emph{\small{buen nivel.}}}
 %\cvitemwithcomment{Español}{Nativo}{}
 %\cvitemwithcomment{Inglés}{Competente}{}
 %\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
@@ -72,54 +76,46 @@
     \newline \newline
     Actividades importantes:
     \begin{itemize}
-      \item Agregando funcionalidad a la aplicación y al API de timbrado
+      \item Agregando funcionalidad a la aplicación y al API de timbrado.
       \item Creación de un módulo para la generación de addendas (CFDI) con base a un XSD, usando metaprogramación.
-      \item Creación de un script para timbrar facturas a traves del API de timbrado, usando incron para ejecutar el script al momento que se suba un archivo al ftp
-      \item Generación de archivos xslts para transformación de XML a otros XML
+      \item Creación de un script para timbrar facturas a traves del API de timbrado, usando incron para ejecutar el script al momento que se suba un archivo al ftp.
+      \item Generación de archivos xsl para transformación de XML.
       \item Actualizando gemas, refactorización de código.
+      \item Revisión de pull-request o merge-request.
     \end{itemize}}
   \cventry{Setp. 2019 -- Dic. 2019}{Ruby on Rails Developer}{Warepow}{Santiago de Querétaro, Qro}{}{
-    Agregando funcionalidad a un sistema en Ruby on Rails usando TDD. Sistema para al control administrativo y financiero de obras. Trabajando fines de semana.
+    Agregando funcionalidad a un sistema en Ruby on Rails usando TDD. Sistema para al control administrativo y financiero de obras.
   }
   \cventry{Jun. 2018 -- Jul. 2019}{Ruby on Rails Developer}{Freelance}{Oaxaca de Juárez, Oax}{}{
     Desarrollando sistemas con Ruby on Rails usando BDD y TDD.
     \newline \newline
     Actividades importantes:
     \begin{itemize}
-      \item Desarrollo de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos)
-      \item Desarrollo de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT
+      \item Desarrollo de un sistema para la venta en línea de libros y artículos, usando el API de Conekta (para el procesamiento de pagos).
+      \item Desarrollo de un sistema para facturación electrónica de un municipio, cumpliendo con las especificaciones del SAT.
     \end{itemize}}
   \cventry{May. 2016 -- Ag. 2018}{Ruby on Rails Developer}{LogicalBricks}{Oaxaca de Juárez, Oax}{}{
     Desarrollando para Logicalbricks usando TDD, y a su vez aprendiendo de un equipo de alto desempeño.
     \newline \newline
-    Actividades importantes:
-  \begin{itemize}
-    \item Mantenimiento y actualización de gemas públicas y privadas de LogicalBricks, por ejemplo:
-    \item \textbf{fm\_timbrado\_cfdi}
-      \begin{itemize}
-        \item Actualización para soportar los cambios del CFDI 3.3 con base a las especificaciones del PAC Facturación Moderna
-      \end{itemize}
-    \item \textbf{fm\_layout}
-      \begin{itemize}
-        \item Actualización para soportar los cambios de la Nómina 1.2 y la nueva facturación electrónica CFDI 3.3 (SAT)
-          con base a las especificaciones del PAC Facturación Moderna
-      \end{itemize}
-    \item \textbf{cfdi\_parser}
-      \begin{itemize}
-        \item Actualización para soportar los cambios del CFDI 3.3
-      \end{itemize}
+    Mantenimiento y actualización de gemas públicas y privadas de LogicalBricks, por ejemplo:
+    \begin{itemize}
+      \item \textbf{fm\_timbrado\_cfdi, fm\_layout y cfdi\_parser}
+        \begin{itemize}
+          \item Actualización para soportar los cambios de la nómina 1.2 y la nueva facturación electrónica CFDI 3.3
+            con base a las especificaciones del SAT y del PAC Facturación Moderna.
+        \end{itemize}
   \end{itemize}}
   \cventry{}{}{}{}{}{
+    Mantenimiento y actualización de los principales sistemas de LogicalBricks por ejemplo:
     \begin{itemize}
-      \item Mantenimiento y actualización de los principales sistemas de LogicalBricks por ejemplo:
       \item \textbf{Infacto (Nómina y facturación)}
         \begin{itemize}
-          \item Modelado y codificación de la nueva Nómina 1.2 y la nueva facturación electrónica CFDI 3.3 (SAT)
-          \item A cargo del sistema agregando nuevas funcionalidades
+          \item Modelado y codificación de la nueva Nómina 1.2 y la nueva facturación electrónica CFDI 3.3 (SAT).
+          \item A cargo del sistema agregando nuevas funcionalidades.
         \end{itemize}
       \item \textbf{IDEClara, SinPapel, Prev}
         \begin{itemize}
-          \item A cargo de los sistemas agregando nuevas funcionalidades
+          \item A cargo de los sistemas agregando nuevas funcionalidades.
         \end{itemize}
     \end{itemize}
   }
@@ -150,14 +146,14 @@
   \cventry{2015-2017}{Taller}{Coderetreat 2015, 2016 y 2017}{Oaxaca de Juárez, Oax}{Global day of CodeRetreat}{}
   \cventry{2015-2018}{Dojos}{Ruby Oaxaca Comunidad (Oaxaca.rb)}{}{}{
     \begin{itemize}
-      \item Participación en la administración de la página de la comunidad \href{http://oaxacarb.org/}{Oaxacarb.rb}
+      \item Participación en la administración de la página de la comunidad \href{http://oaxacarb.org/}{Oaxacarb.rb}.
         %\item Creador de la página \href{https://www.facebook.com/oaxacarb}{Oaxaca.rb} en Facebook \CreateHappyFace , para dar a conocer
         %la comunidad a más persona.
       \item Creador de \href{https://oaxacarb.herokuapp.com/}{oaxacarb.herokuapp} para mostrar información del canal de Slack de la comunidad.
       \item Encargado de la campaña quincenal del Coding Dojo, creando el evento en EventBrite y enviando las invitaciones a través de Mailchimp.
     \end{itemize}}
 \subsection{Cursos en línea}{
-  \cventry{2015-2018}{Coursera}{}{}{}{
+  \cventry{2015-2018}{}{}{}{}{
     \begin{itemize}
       \item Ruby on Rails: An Introducction - Universidad Johns Hopkins
       \item Rails with Active Record and Action Pack - Universidad Johns Hopkins
