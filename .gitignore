@@ -2,3 +2,5 @@
 *.pdf
 *.aux
 *.out
+.DS_Store
+!luis_silva_ruby_software_engineer.pdf
