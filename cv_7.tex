@@ -1,9 +1,10 @@
 \PassOptionsToPackage{pdfpagelabels=false}{hyperref}
-\documentclass[10pt,a4paper,sans,colorlinks]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[11pt,a4paper,sans,colorlinks]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.83]{geometry} % Reduce document margins
+\usepackage[scale=0.80]{geometry} % Reduce document margins
+\usepackage{multicol}
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{orange} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 %----------------------------------------------------------------------------------------
@@ -15,7 +16,7 @@
 
 % All information in this block is optional, comment out any lines you don't need
 %\title{Curriculum Vitae}
-\address{Don Jaime 114 11, La Santa Cruz}{Santiago de Querétaro, Qro. 76020}
+\address{}{Oaxaca de Juárez, Oaxaca 68030, México}
 \mobile{951 578 75 48}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
@@ -61,41 +62,63 @@
 \makecvtitle % Print the CV title
 
 \section{About me}
-  Linux and Vim user, follower of the good development practices like TDD (Test Drive Development), design patterns, code refactoring.
-  I like to work with multidisciplinary teams where my colleagues share the use of good development practices, I've experience working with Scrum.
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+  I'm a Ruby Software Engineer who values good development practices such as TDD, design patterns and code refactoring.
+  I've 8 years of experience in software development, with a strong focus on Ruby and Ruby on Rails.
+\section{Skills}
 
-\section{Education}
-
-\cventry{2011--2018}{Computer Systems Engineering}{Technological Institute of Oaxaca, México}{}{}{}  % Arguments not required can be left empty
-%\cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
-
-%\section{Masters Thesis}
-
-%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
-%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
-%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
-
-%----------------------------------------------------------------------------------------
-%	LANGUAGES SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Languages}
-
-\cvlistdoubleitem{Spanish (Native)}{English, good level.}
-%\cvitemwithcomment{English}{Intermediate}{Conversationally fluent (B1 level)}
-%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
-
+\begin{multicols}{2}
+  \begin{itemize}
+    \item Ruby, Ruby on Rails, Roda, dry-rb
+    \item RSpec, Minitest, Capybara, FactoryGirl/FactoryBot, VCR, WebMock, Shoulda-Matchers
+    \item Simpleform, Haml, ERB, ViewComponent
+    \item Delayed\_job, Sidekiq
+    \item HTML, CSS, Bootstrap, Tailwind CSS
+    \item JavaScript, React, Stimulus
+    \item SQL (MySQL, PostgreSQL)
+    \item Git (Github, Bitbucket)
+    \item Linux, Mac, Docker, RVM, asdf
+    \item Heroku, Digital Ocean
+    \item Vim, Tmux
+    \item Semaphore CI, CircleCi, Bitbucket Pipelines
+    \item Pivotal Tracker, Jira, Trello, Redmine, Figma
+  \end{itemize}
+\end{multicols}
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Professional Experience}
-  \cventry{Aug. 2019 -- Present}{Ruby on Rails Developer}{Zentiglo}{Santiago de Querétaro, Qro}{}{
+\cventry[1em]{Feb. 2022 -- Current}{\textbf{Ruby Software Engineer}}{Skydropx}{Remote}{}{
+  Helping Skydropx team to maintain the main system and building a new product to replace the old Skydropx app.
+  Using Ruby on Rails 7, Tailwind CSS, ViewComponent and Stimulus, Sorbet
+  \\[0.5em]
+  Detailed achievements:
+  \begin{itemize}
+    \item Doing code review of my team pull requests
+    \item Helping the team to improve the code quality
+    \item Starting a new product to replace the old Skydropx app
+    \item Design and build an API to quote shippings and create labels
+    \item Integrate Zendesk CRM with the Skydropx app to handle users tickets
+    \item Update the main system to invoice with the latest version (4) of the Mexican Tax Agency (SAT)
+  \end{itemize}
+}
+\cventry[1em]{Sep. 2020 -- Jan. 2022}{\textbf{Ruby Developer}}{Don Signore}{Remote}{}{
+    Helping Don Signore team to build an API for Payment Processing.
+    Working with Ruby, JavaScript, Roda, Rails, React and the dry-rb collection.
+    Doing TDD with Minitest and RSpec.
+    \\[0.5em]
+    Detailed achievements:
+    \begin{itemize}
+      \item Implement the PayPal Payment Gateway for the API
+      \item Implement an API to download PayPal payouts
+      \item Implement a Javascript SDK for the Payment Processing API
+      \item Integrate a new Rails engine to Rails app
+      \item Integrate the Payment Processing API with a Rails app with the JavaScript SDK
+    \end{itemize}
+  }
+  \cventry[1em]{Aug. 2019 -- Feb 2021}{\textbf{Ruby on Rails Developer}}{Zentiglo}{Santiago de Querétaro, Qro}{}{
     Maintaining and upgrading the main Zentiglo's system using TDD, an electronic invoicing system.
-    \newline \newline
+    \\[0.5em]
     Detailed achievements:
     \begin{itemize}
       \item Adding features to the system and the API.
@@ -106,22 +129,12 @@
       \item Code review
     \end{itemize}
   }
-  \cventry{Sept. 2019 -- Dec. 2019}{Ruby on Rails Developer}{Warepow}{Santiago de Querétaro, Qro}{}{
+  \cventry[1em]{Sept. 2019 -- Dec. 2019}{\textbf{Ruby on Rails Developer - Part time}}{Warepow}{Santiago de Querétaro, Qro}{}{
     Adding features into a Ruby on Rails system using TDD, an administrative and financial control system.
   }
-  \cventry{Jun. 2018 -- Jul. 2019}{Ruby on Rails Developer}{Freelance}{Oaxaca, México}{}{
-    Developing systems with Ruby on Rails using BDD and TDD
-    \newline \newline
-    Detailed achievements:
-    \begin{itemize}
-      \item Planning, modeling and coding a system for online sale of books and articles using the Conekta API (payment processing), developed with Rails using TDD.
-      \item Planning, modeling and coding a system to report an specific tax to the Mexican Tax Agency (SAT), developed with Rails using BDD y TDD.
-    \end{itemize}
-  }
-
   \cventry{May 2016 -- Aug 2018}{Ruby on Rails Developer}{LogicalBricks}{Oaxaca, México}{}{
     Developing for LogicalBricks using TDD and learning from a high performance team.
-    \newline \newline
+    \\[0.5em]
     Detailed achievements:
     \begin{itemize}
       \item Contributing to some private and public LogicalBricks' gems, for example:
@@ -149,12 +162,36 @@
   }
 
 %----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2011--2018}{Computer Systems Engineering}{Technological Institute of Oaxaca, México}{}{}{}  % Arguments not required can be left empty
+%\cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
+
+%\section{Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\subsection{Languages}
+
+\cvlistdoubleitem{Spanish (Native)}{English, good level.}
+%\cvitemwithcomment{English}{Intermediate}{Conversationally fluent (B1 level)}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
 %	Workshops and Conferences
 %----------------------------------------------------------------------------------------
 
-\section{Workshops Conferences and Courses}
-\subsection{As Attendee}
-  \cventry{2014 - 2018}{Talks}{by Ruby Oaxaca community (Oaxaca.rb)}{}{}{
+\section{Talks, Workshops, and Courses}
+\cventry{2014 - 2018}{}{Talks as Attendee}{by Ruby Oaxaca community}{}{
     Action Cable,
     Metaprogramming in ruby,
     Matchers in RSpec,
@@ -167,26 +204,22 @@
     Git,
     TrailBlazer,
     Middleman}
-\subsection{As Speaker}
-  \cventry{2015}{Workshop}{Introduction to Ruby}{Oaxaca de Juárez, Oaxaca, México}{}{In the XII anniversary of the academic day of Engineering in Computer Systems, organized by Instituto Tecnológico de Oaxaca}
-  \cvitem{}{Workshop of 10 hours}
-\subsection{As Organizer}
-  \cventry{2015-2017}{Workshops}{Coderetreat 2015, 2016 y 2017}{Oaxaca de Juárez, Oaxaca, México}{Global day of CodeRetreat}{}
-  \cventry{2015-2018}{Oaxaca.rb}{}{Ruby user community}{}{
-    \begin{itemize}
-      \item Collaborator in the administration of the community page \href{http://oaxacarb.org/}{Oaxacarb.rb}
-      \item Creator of \href{https://oaxacarb.herokuapp.com/}{oaxacarb.herokuapp} to show information about the community's Slack channel.
-      \item Responsible for the biweekly campaign of the Coding Dojo, creating the event in EventBrite and sending the invitations through Mailchimp.
-    \end{itemize}
-}
-\subsection{Online Courses}
-  \cventry{2015-2018}{}{}{}{}{
-    \begin{itemize}
-      \item Ruby on Rails: An Introduction - Universidad Johns Hopkins
-      \item Rails with Active Record and Action Pack - Universidad Johns Hopkins
-      \item HTML, CSS and JavaScript - Universidad Científica y Tecnológica de Hong Kong
-    \end{itemize}
+\cventry{2015}{}{Workshop as Speaker (Ruby Introduction)}{by Instituto Tecnológico de Oaxaca}{}{
+    In the XII anniversary of the academic day of Engineering in Computer Systems (Workshop of 10 hours)
   }
+\cventry{2015 - 2017}{}{Workshop as Organizer}{by Ruby Oaxaca community}{}{
+  Global day of CodeRetreat
+}
+\cventry{2015-2018}{}{\textbf{Ruby user community}}{Oaxaca.rb}{}{
+  Collaborator of the community page \href{http://oaxacarb.org/}{Oaxacarb.rb} and responsible for the biweekly campaign of the Coding Dojo
+}
+% \cventry{2015-2018}{}{Online Courses}{}{}{}{
+%   \begin{itemize}
+%     \item Ruby on Rails: An Introduction - Universidad Johns Hopkins
+%     \item Rails with Active Record and Action Pack - Universidad Johns Hopkins
+%     \item HTML, CSS and JavaScript - Universidad Científica y Tecnológica de Hong Kong
+%   \end{itemize}
+%   }
 
 %----------------------------------------------------------------------------------------
 %\cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
@@ -212,24 +245,24 @@
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{General Development Languajes and Tools}
-  \cvitem{Languages}{Java, Ruby, SQL, JavaScript}
-  \cvitem{Frameworks}{Rails(4,5)  Vue(learning), Bootstrap}
-  \cvitem{DBMS}{MySQL, PostgreSQL}
-  \cvitem{Linux Systems}{Debian, Ubuntu, ArchLinux, Chakra}
-  \cvitem{VCS}{Git(Github, Bitbucket)}
-  \cvitem{Continuos Integration}{Semaphore CI, Bitbucket Pipelines}
-  \cvitem{Workers}{Delayed\_job, Sidekiq}
-  \cvitem{Others}{Vim, Tmux, RVM, Docker, Zsh, Yakuake, Jira, Trello, Redmine}
+% \section{General Development Languajes and Tools}
+%   \cvitem{Languages}{Java, Ruby, SQL, JavaScript}
+%   \cvitem{Frameworks}{Rails(4,5)  Vue(learning), Bootstrap}
+%   \cvitem{DBMS}{MySQL, PostgreSQL}
+%   \cvitem{Linux Systems}{Debian, Ubuntu, ArchLinux, Chakra}
+%   \cvitem{VCS}{Git(Github, Bitbucket)}
+%   \cvitem{Continuos Integration}{Semaphore CI, Bitbucket Pipelines}
+%   \cvitem{Workers}{Delayed\_job, Sidekiq}
+%   \cvitem{Others}{Vim, Tmux, RVM, Docker, Zsh, Yakuake, Jira, Trello, Redmine}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{RoR Related Development Tools}
-  \cvitem{Testing}{Rspect, Minitest, Capybara, Shoulda-Matchers, FactoryGirl/FactoryBot, VCR, WebMock}
-  \cvitem{View}{Simpleform, Haml, JQuery, CoffeScript}
-  \cvitem{Despliegue}{Capistrano, Nginx, Unicorn, Apache, Passenger, Digital Ocean, Heroku}
+% \section{RoR Related Development Tools}
+%   \cvitem{Testing}{Rspect, Minitest, Capybara, Shoulda-Matchers, FactoryGirl/FactoryBot, VCR, WebMock}
+%   \cvitem{View}{Simpleform, Haml, JQuery, CoffeScript}
+%   \cvitem{Despliegue}{Capistrano, Nginx, Unicorn, Apache, Passenger, Digital Ocean, Heroku}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
